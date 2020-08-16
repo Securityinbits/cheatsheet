@@ -5,8 +5,8 @@
     - [Process](#process)
     - [Registry](#registry)
     - [File](#file)
-        - [Gather file hashes](gather-file-hashes)
-- [References](references)
+        - [Gather file hashes](#gather-file-hashes)
+- [References](#references)
 
 
 ## Basics
