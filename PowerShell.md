@@ -32,11 +32,14 @@ Get Id, ProcessName, Path, Company, StartTime with **Select-Object** cmdlet
 Get-Process ProcName | Select-Object Id, ProcessName, Path, Company, StartTime | Format-Table
 ```
 
-**Get-Process** cmdlet doesn’t support the process command line so use **Get-WmiObject** command
+**Get-Process** cmdlet doesn’t support the process command line so use **Get-WmiObject** command for Windows PowerShell 5.1
 ```powershell
 Get-WmiObject -Class Win32_Process -Filter "name='process.exe'" | Select-Object ProcessId, ProcessName, CommandLine
 ```
-
+But **Get-Wmiobject** is deprecated so use **Get-CimInstance** for PowerShell 7 
+```powershell
+Get-CimInstance -Class Win32_Process | Format-Table -Property ProcessId, ProcessName, CommandLine -Autosize
+```
 Terminate Process
 ```powershell
 Get-Process ProcName | Stop-Process
