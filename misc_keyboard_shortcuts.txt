@@ -1,0 +1,4 @@
+To view strings of file, can use less strings + less cmd
+
+strings filename | less
+Press spacebar to go forward 1 page and b for backword
