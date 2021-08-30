@@ -2,3 +2,9 @@ To view strings of file, can use less strings + less cmd
 
 strings filename | less
 Press spacebar to go forward 1 page and b for backword
+
+Works fine in Mac/Linux
+Ctrl + a - Move to start of a line
+Ctrl + e - Move to end of line
+Ctrl + l - Clear Screen
+Ctrl + u - Clear current line
