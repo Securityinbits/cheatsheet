@@ -1,7 +1,10 @@
 Setup
 
 
-so-status -  to view if all services are running or not
+sudo so-status -  to view if all services are running or not
+
+Check if any Ips are allowed to access SO
+sudo so-allow-view
 
 To change IP
 
@@ -17,3 +20,7 @@ sudo SecurityOnion/setup/so-setup iso
 Then used the below to update the IP address of management interface.
 https://docs.securityonion.net/en/2.3/ip.html
 so-ip-update
+
+Sysmon
+
+https://github.com/Security-Onion-Solutions/securityonion/discussions/3742
