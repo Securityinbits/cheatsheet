@@ -10,5 +10,6 @@ sudo systemctl enable suricata
 to test signature
 wget http://testmynids.org/uid/index.html
 
-
+To work as gateway need to enable net.ipv4.ip_forward = 1 to forward all packets
+https://www.systutorials.com/setting-up-gateway-using-iptables-and-route-on-linux/
 
