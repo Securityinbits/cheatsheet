@@ -1,0 +1,8 @@
+Rough notes:
+
+Install suricata
+https://suricata.readthedocs.io/en/latest/quickstart.html
+replace eth0 with your interface, i did around 3 places
+
+sudo systemctl restart suricata
+systemctl enable suricata
