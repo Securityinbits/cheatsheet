@@ -26,6 +26,7 @@ ens38 - LAN interface
   - `sudo iptables --table nat --append POSTROUTING --out-interface ens33 -j MASQUERADE`
   - `sudo iptables --append FORWARD --in-interface ens38 -j ACCEPT`
   -  Save iptable using `iptables-save`
+  -  Persist iptable using any method mention  [here](https://help.ubuntu.com/community/IptablesHowTo)
 
 3. Configure [bind](https://serverspace.io/support/help/configure-bind9-dns-server-on-ubuntu/) Server on Linux gateway
 
