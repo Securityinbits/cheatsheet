@@ -8,3 +8,10 @@ Ctrl + a - Move to start of a line
 Ctrl + e - Move to end of line
 Ctrl + l - Clear Screen
 Ctrl + u - Clear current line
+
+Youtube shortcut:
+https://support.google.com/youtube/answer/7631406?hl=en
+
+>	Speed up the video playback rate.
+<	Slow down the video playback rate.
+f Activate full screen 
