@@ -104,8 +104,12 @@ Command for collecting the file hashes in the directory with MD5, SHA256, Name &
 Using E/Expression we are calculating the MD5 & SHA256 of each file returned by **Get-ChildItem**
 
 ```powershell
-Get-ChildItem -Path C:\Users\admin\AppData\Roaming\0319B08F-2B65-4192-B2D2-1E2F62087064\ -Force -Recurse -File | Select-Object @{Name='MD5';E={(Get-FileHash -Algorithm MD5 $_).Hash}}, @{N='SHA256';E={(Get-FileHash -Algorithm SHA256 $_).Hash}},Name, FullName | Export-Csv -Path FileHashes.csv
+Get-ChildItem -Path C:\Users\admin\AppData\Roaming\0319B08F-2B65-4192-B2D2-1E2F62087064\ -Force -Recurse -File |
+Select-Object @{Name='MD5';E={(Get-FileHash -Algorithm MD5 $_).Hash}}, 
+@{N='SHA256';E={(Get-FileHash -Algorithm SHA256 $_).Hash}},Name, FullName |
+Export-Csv -NoTypeInformation -Path FileHashes.csv
 ```
+-NoTypeInformation is used to remove this line from csv "#TYPE Selected.System.IO.FileInfo"
 
 ## References
 ### Other good PowerShell Cheat Sheet
