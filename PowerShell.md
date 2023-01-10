@@ -10,6 +10,9 @@
 
 
 ## Basics
+### To check PS version
+```$PSVersionTable```
+
 ### Calculated properties using Hashtable
 Calculated properties that require a Hashtable with a Name/label and an Expression key can be used with **Select-Object** . The name key is the property name and the Expression key is a scriptblock that will be executed as **Select-Object** receives input.
 ```powershell
