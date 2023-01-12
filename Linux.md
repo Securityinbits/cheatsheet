@@ -1,3 +1,5 @@
+To locate use updatedb then locate
+
 To check vmware installed or not in Ubuntu  
 `lsmod | grep vmw`
 
@@ -12,3 +14,5 @@ https://serverspace.io/support/help/configure-bind9-dns-server-on-ubuntu/
 
 Extract tar.gz file  
 `tar -xvf archive.tar.gz`
+
+For wireless `iwconfig'
