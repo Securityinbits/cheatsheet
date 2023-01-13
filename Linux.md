@@ -15,4 +15,16 @@ https://serverspace.io/support/help/configure-bind9-dns-server-on-ubuntu/
 Extract tar.gz file  
 `tar -xvf archive.tar.gz`
 
-For wireless `iwconfig'
+## Networking
+
+For wireless `iwconfig` <br/>
+For active connection `netstat -ano`
+
+For ip
+`ip a`
+
+For arp table
+`ip n`
+
+for route
+`ip r`
