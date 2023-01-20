@@ -28,3 +28,6 @@ For arp table
 
 for route
 `ip r`
+
+if want to remove : after cat from abcd:
+tr -d ":"
