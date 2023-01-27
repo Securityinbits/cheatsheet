@@ -6,6 +6,7 @@
     - [Registry](#registry)
     - [File](#file)
         - [Gather file hashes](#gather-file-hashes)
+- [Useful Functions](#useful-functions)
 - [References](#references)
 
 
@@ -113,6 +114,25 @@ Select-Object @{Name='MD5';E={(Get-FileHash -Algorithm MD5 $_).Hash}},
 Export-Csv -NoTypeInformation -Path FileHashes.csv
 ```
 -NoTypeInformation is used to remove this line from csv "#TYPE Selected.System.IO.FileInfo"
+
+## Useful Functions
+### Calculate hash of files
+```
+# Get md5,sha256 and file name , input support multiple string with wildcard
+function hashes {
+    Get-ChildItem -Path $args -Force -Recurse -File |
+    Select-Object @{Name='MD5';E={(Get-FileHash -Algorithm MD5 $_).Hash}}, 
+    @{N='SHA256';E={(Get-FileHash -Algorithm SHA256 $_).Hash}},Name
+}
+function md5 {
+    Get-ChildItem -Path $args -Force -Recurse -File | 
+    Select-Object @{Name='MD5';E={(Get-FileHash -Algorithm MD5 $_).Hash}}, Name
+}
+function sha256 {
+    Get-ChildItem -Path $args -Force -Recurse -File | 
+    Select-Object @{Name='SHA256';E={(Get-FileHash -Algorithm SHA256 $_).Hash}}, Name
+}
+```
 
 ## References
 ### Other good PowerShell Cheat Sheet
