@@ -116,6 +116,7 @@ Export-Csv -NoTypeInformation -Path FileHashes.csv
 -NoTypeInformation is used to remove this line from csv "#TYPE Selected.System.IO.FileInfo"
 
 ## Useful Functions
+This function can be added to PowerShell profile file e.g. [Profile.ps1](https://github.com/Securityinbits/config/blob/main/Profile.ps1)
 ### Calculate hash of files
 ```
 # Get md5,sha256 and file name , input support multiple string with wildcard
