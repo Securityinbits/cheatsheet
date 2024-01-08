@@ -1,5 +1,7 @@
 # PowerShell Cheat Sheet for Blue Team
 
+I will recommend reading this [PowerShell Commands for Incident Response](https://www.securityinbits.com/incident-response/powershell-commands-for-incident-response/) article to get a better understanding of the commands discussed below.  
+
 - [Basics](#basics)
 - [Commands](#commands)
     - [Process](#process)
@@ -22,7 +24,6 @@ Calculated properties that require a Hashtable with a Name/label and an Expressi
 Using E/Expression we are calculating the MD5 & SHA256 of each file returned by Get-ChildItem as shown below in the [gather file hashes](#gather-file-hashes) section.
 
 ## Commands
-I will recommend reading this [PowerShell Commands for Incident Response](https://www.securityinbits.com/incident-response/powershell-commands-for-incident-response/) article to get a better understanding of the commands discussed below. I have extracted the PowerShell Commands from the above article for quick reference.
 **Make sure you are running the PowerShell with admin privilege otherwise some of the cmdlets will not work properly**
 
 ### Process
