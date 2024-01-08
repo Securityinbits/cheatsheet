@@ -44,6 +44,14 @@ But **Get-Wmiobject** is deprecated so use **Get-CimInstance** for PowerShell 7
 ```powershell
 Get-CimInstance -Class Win32_Process | Format-Table -Property ProcessId, ProcessName, CommandLine -Autosize
 ```
+Update:
+This cmd works fie for PowerShell 7 
+```powershell
+Get-Process ProcName | Select-Object Id, ProcessName, CommandLine, Path
+```
+
+
+
 Terminate Process
 ```powershell
 Get-Process ProcName | Stop-Process
